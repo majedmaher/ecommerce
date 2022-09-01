@@ -40,15 +40,17 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
                         <a href="{{route('index')}}" class="nav-item nav-link">Home</a>
-                        <a href="{{route('shop')}}" class="nav-item nav-link">Shop</a>
-                        <a href="{{route('details',['product_slug'=>'Colorful-Stylish-Shirt'])}}" class="nav-item nav-link">Shop Detail</a>
-                        <div class="nav-item dropdown">
+                        <!-- <a href="{{route('shop')}}" class="nav-item nav-link">Shop</a> -->
+                        <!-- <a href="{{route('details',['product_slug'=>'Colorful-Stylish-Shirt'])}}" class="nav-item nav-link">Shop Detail</a> -->
+                        <a href="{{route('cart')}}" class="dropdown-item">Shopping Cart</a>
+                        <a href="{{route('checkout')}}" class="dropdown-item">Checkout</a>
+                        <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu rounded-0 m-0">
                                 <a href="{{route('cart')}}" class="dropdown-item">Shopping Cart</a>
                                 <a href="{{route('checkout')}}" class="dropdown-item">Checkout</a>
                             </div>
-                        </div>
+                        </div> -->
                         <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="navbar-nav ml-auto py-0">
