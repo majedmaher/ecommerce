@@ -42,8 +42,8 @@
                         <a href="{{route('index')}}" class="nav-item nav-link">Home</a>
                         <!-- <a href="{{route('shop')}}" class="nav-item nav-link">Shop</a> -->
                         <!-- <a href="{{route('details',['product_slug'=>'Colorful-Stylish-Shirt'])}}" class="nav-item nav-link">Shop Detail</a> -->
-                        <a href="{{route('cart')}}" class="dropdown-item">Shopping Cart</a>
-                        <a href="{{route('checkout')}}" class="dropdown-item">Checkout</a>
+                        <a href="{{route('cart')}}" class="nav-item nav-link">Shopping Cart</a>
+                        <a href="{{route('checkout')}}" class="nav-item nav-link">Checkout</a>
                         <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu rounded-0 m-0">
