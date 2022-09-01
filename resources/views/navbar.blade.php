@@ -39,11 +39,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="{{route('index')}}" class="nav-item nav-link">Home</a>
+                        <a href="{{route('index')}}" class="nav-item nav-link">{{getLanguage() == 'ar' ? 'الرئيسية' : 'Home'}}</a>
                         <!-- <a href="{{route('shop')}}" class="nav-item nav-link">Shop</a> -->
                         <!-- <a href="{{route('details',['product_slug'=>'Colorful-Stylish-Shirt'])}}" class="nav-item nav-link">Shop Detail</a> -->
-                        <a href="{{route('cart')}}" class="nav-item nav-link">Shopping Cart</a>
-                        <a href="{{route('checkout')}}" class="nav-item nav-link">Checkout</a>
+                        <a href="{{route('cart')}}" class="nav-item nav-link">{{getLanguage() == 'ar' ? 'عربة التسوق' : 'Shopping Cart'}}</a>
+                        <a href="{{route('checkout')}}" class="nav-item nav-link">{{getLanguage() == 'ar' ? 'الدفع' : 'Checkout'}}</a>
                         <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu rounded-0 m-0">
@@ -51,12 +51,12 @@
                                 <a href="{{route('checkout')}}" class="dropdown-item">Checkout</a>
                             </div>
                         </div> -->
-                        <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
+                        <a href="{{route('contact')}}" class="nav-item nav-link">{{getLanguage() == 'ar' ? 'تواصل معنا' : 'Contact'}}</a>
                     </div>
                     <div class="navbar-nav ml-auto py-0">
                         @guest
-                        <a href="{{route('login')}}" class="nav-item nav-link">Login</a>
-                        <a href="{{route('register')}}" class="nav-item nav-link">Register</a>
+                        <a href="{{route('login')}}" class="nav-item nav-link">{{getLanguage() == 'ar' ? 'تسجيل الدخول' : 'Login'}}</a>
+                        <a href="{{route('register')}}" class="nav-item nav-link">{{getLanguage() == 'ar' ? 'التسجيل' : 'Register'}}</a>
                         @endguest
                     </div>
                 </div>
