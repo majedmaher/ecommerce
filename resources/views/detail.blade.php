@@ -34,7 +34,7 @@
 
         <div class="col-lg-7 pb-5">
             <h3 class="font-weight-semi-bold" id="pname">{{$product->name}}</h3>
-            <div class="d-flex mb-3">
+            <!-- <div class="d-flex mb-3">
                 <div class="text-primary mr-2">
                     <small class="fas fa-star"></small>
                     <small class="fas fa-star"></small>
@@ -43,7 +43,7 @@
                     <small class="far fa-star"></small>
                 </div>
                 <small class="pt-1">(50 Reviews)</small>
-            </div>
+            </div> -->
             <h3 class="font-weight-semi-bold mb-4">${{$product->discount_price}}</h3>
             @if ($product->selling_price)
             <h6 class="text-muted ml-2"><del>${{$product->selling_price}}</del></h6>
@@ -112,7 +112,7 @@
             <div class="nav nav-tabs justify-content-center border-secondary mb-4">
                 <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Description</a>
                 <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Information</a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-3">Reviews (0)</a>
+                <!-- <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-3">Reviews (0)</a> -->
             </div>
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="tab-pane-1">
@@ -146,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="tab-pane-3">
+                <!-- <div class="tab-pane fade" id="tab-pane-3">
                     <div class="row">
                         <div class="col-md-6">
                             <h4 class="mb-4">1 review for "Colorful Stylish Shirt"</h4>
@@ -197,7 +197,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
