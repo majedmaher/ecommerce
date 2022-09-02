@@ -196,7 +196,7 @@ class PaymentController extends Controller
         }
     }
 
-    public function dataToArray(Request $request)
+    public function dataToArray($request)
     {
         $data = array();
         $data['first_name'] = $request->first_name;
